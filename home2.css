@@ -1,0 +1,177 @@
+/* Add a container for the logo and navigation links */
+
+.header-container {
+  background-color: #C6F7D0; /* Light green background */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #8BC34A; /* Add a subtle border */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the logo */
+
+.header-container img {
+  height: 50px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+/* Style the navigation links */
+
+.header-container b {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #3E8E41; /* Dark green text */
+}
+
+.header-container a {
+  color: #2E865F; /* Green text */
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.header-container a:hover {
+  color: #1B5E3F; /* Darker green text on hover */
+}
+
+/* Add some basic responsiveness */
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-container img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container img {
+    height: 30px;
+  }
+  .header-container b {
+    font-size: 14px;
+  }
+}
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #28282B;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+header img {
+  height: 50px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+header b {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+header a {
+  color: #fff;
+  margin-right: 20px;
+}
+
+header a:hover {
+  color: #ccc;
+}
+
+/* Main Content Styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+main h3 {
+  margin-top: 20px;
+}
+
+main p {
+  margin-bottom: 30px;
+}
+
+main h5 {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Call-to-Action Styles */
+
+.cta {
+  background-color: #337ab7;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #23527c;
+}
+
+/* Add some basic responsiveness */
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+  header img {
+    height: 30px;
+  }
+  header b {
+    font-size: 14px;
+  }
+}
