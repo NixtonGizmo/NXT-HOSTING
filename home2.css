@@ -233,13 +233,23 @@ main h5 {
 
 /* Flex Containers for Sections */
 .first {
-  width: 10px;
-  height: 100px;
+  width: 300px;
+  height: 100vh;
 }
 
 .second {
-  width: 1000px;
-  height: 100px;
+  width: calc(100% - 300px);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .first {
+    width: 100%;
+  }
+  .second {
+    width: 100%;
+  }
 }
 
 /* Main container */
