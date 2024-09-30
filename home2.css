@@ -231,6 +231,9 @@ main h5 {
   transform: translateX(-100%);
 }
 
+/* Flex Containers for Sections */
+
+
 /* Main container */
 .main-container {
   display: flex;
