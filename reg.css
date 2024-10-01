@@ -1,7 +1,7 @@
 /* Global Styles */
 
 body {
-  font-family: merlin;
+  font-family: times new roman, sans-serif;
   background-color: #E0FFFF;
 }
 
@@ -16,7 +16,7 @@ center {
 }
 
 table {
-  width: 50%;
+  width: 100%;
   border-collapse: collapse;
   margin: 0 auto; 
   left: 0;
@@ -34,6 +34,7 @@ th {
 
 label {
   font-weight: bold;
+  
 }
 
 input[type="text"], input[type="password"] {
@@ -42,18 +43,18 @@ input[type="text"], input[type="password"] {
   border: 1px solid #ccc;
 }
 
-button[type="submit"] {
-  background-color: #009966;
+button {
+  background-color: #4CAF50;
   color: #fff;
-  padding: 50px 50px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-align: center;
 }
 
 button[type="submit"]:hover {
   background-color: #009966;
+  width: 86%;
 }
 
 a {
