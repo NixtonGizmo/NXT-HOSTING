@@ -1,0 +1,90 @@
+body {
+  font-family: times new roman, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  color: #337ab7;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #337ab7;
+  margin-bottom: 5px;
+}
+
+marquee {
+  background-color: #40E0D0;
+  color: #171717;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+display: flex;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#con {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+}
+
+#con label {
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+#con input[type="email"], #con input[type="text"] {
+  display: inline-block;
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#con textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+#con1 {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+   text-align: center;
+}
