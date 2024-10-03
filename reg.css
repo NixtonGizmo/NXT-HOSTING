@@ -1,40 +1,3 @@
-/* Global Styles */
-
-body {
-  font-family: times new roman, sans-serif;
-  background-color: #E0FFFF;
-}
-
-
-center {
-  width: 50%;
-  margin: 40px auto;
-  padding: 50px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0 auto; 
-  left: 0;
-}
-
-th, td {
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-th {
-  background-color: #f0f0f0;
-  text-align: left;
-}
-
-label {
-  font-weight: bold;
-  
 }
 
 input[type="text"], input[type="password"] {
@@ -70,3 +33,9 @@ marquee {
   color: #fff;
   padding: 10px;
   border-radius: 10px;
+}
+
+td button {
+  margin: 0 auto;
+  display: block;
+}
