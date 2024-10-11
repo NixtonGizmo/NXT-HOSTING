@@ -1,18 +1,12 @@
-/* Add a container for the logo and navigation links */
-
 .header-container {
-  background-image: url('https://wallpaperaccess.com/full/3539116.jpg');
+  background-color: #ffffff00;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 0px solid #8BC34A; /* Add a subtle border */
-  border-radius: 10px; /* Add rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border: 0px solid #8BC34A; 
   background-size: cover;
 }
-
-/* Style the logo */
 
 .header-container img {
   height: 50px;
@@ -20,12 +14,11 @@
   vertical-align: middle;
 }
 
-/* Style the navigation links */
 
 .header-container b {
   font-size: 18px;
   margin-right: 10px;
-  color: #3E8E41; /* Dark green text */
+  color: #3E8E41;
 }
 
 .header-container a {
@@ -39,8 +32,6 @@
 }
 
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -52,13 +43,16 @@ body {
   line-height: 1.6;
   color: #333;
   width: 100%;
-  background-image: url('https://wallpaperaccess.com/full/3539116.jpg');
+  background-image: url('https://i.ibb.co/dgKWh4Q/mmain-1-1-1.png');
   background-size: cover;
+  
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff00;
 }
 
 a:hover {
@@ -74,12 +68,13 @@ h1{
 margin: -1px;
   color: #fff;
   padding: 10px;
-  font-size: 35px;
+  font-size: 45px;
+   margin-bottom: -40px;
 }
 
 p{
- margin: -25px;
-  margin-bottom: px;
+ margin: 9px;
+  margin-bottom: 1px;
   color: #fff;
   
 }
@@ -119,17 +114,25 @@ header a:hover {
   color: #ccc;
 }
 
-div{
-  width: 40%;
-  font-size: 12px;
-  padding: 10px;
-  margin-left: 25px;
+
+.container1{
+  width: 60%;
+  font-size: 11px;
+  margin-left: 95px;
   text-align: center;
+   margin-top: 60px;
+}
+
+.container2{
+  width: 50%;
+  font-size: 11px;
+  margin-left: 20px;
+  text-align: left;
+   margin-top: 0px;
 }
 
 button {
-  background-color: #4CAF50;
-  color: #fff;
+  background-color: #00FFFF;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -139,14 +142,19 @@ button {
 }
 
 #on1{
-  color: #7FFF00;
+  color: #00FFFF;
+  
 }
 
 #lo1{
   background-color: #7FFF00;
 }
 
-
 #log1{
   color: #fff;
+  font-size: 12px;
+}
+
+.container3{
+height: 10%;
 }
