@@ -1,11 +1,26 @@
+
 .header-container {
   background-color: #ffffff00;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 0px solid #8BC34A; 
-  background-size: cover;
+  color: #000000;
+}
+
+
+.container3:hover{
+  color: #e36729;
+} 
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5em;
+  }
+}
+
+.font-size-responsive {
+  font-size: 1.5rem;
 }
 
 .header-container img {
@@ -14,7 +29,6 @@
   vertical-align: middle;
 }
 
-
 .header-container b {
   font-size: 18px;
   margin-right: 10px;
@@ -22,13 +36,13 @@
 }
 
 .header-container a {
-  color: #2E865F; /* Green text */
+  color: #000000;
   margin-right: 20px;
   text-decoration: none;
 }
 
 .header-container a:hover {
-  color: #1B5E3F; /* Darker green text on hover */
+  color: #; /* Darker green text on hover */
 }
 
 
@@ -52,8 +66,8 @@ body {
 a {
   text-decoration: none;
   color: #000000;
-  font-weight: bold;
   background-color: #ffffff00;
+  font-family: Poppins;
 }
 
 a:hover {
@@ -125,15 +139,16 @@ header a:hover {
 }
 
 .container2{
-  width: 50%;
+  width: 70%;
   font-size: 11px;
   margin-left: 20px;
   text-align: left;
    margin-top: 0px;
+  font-family: Archivo Black;
 }
 
 button {
-  background-color: #00FFFF;
+  background-color:  #e36729;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -143,12 +158,13 @@ button {
 }
 
 #on1{
-  color: #00FFFF;
-  
+  color: #e36729;
+  text-align: center;
 }
 
 #lo1{
   background-color: #7FFF00;
+ font-family: sans-serif;
 }
 
 #log1{
@@ -167,11 +183,9 @@ height: 10%;
     border: 0 solid;
     margin: 0;
     display: inline-block;
-   font-family: Stargaze Stencil;
+   font-family: Montserrat;
     line-height: 1;
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
-    transform: translateY(0%) translateZ(0px);
+  font-size: 60px;
   
 }
 ul{
@@ -185,37 +199,87 @@ ul{
   font-size: 14px;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 700
+.container4{
+  color: #fff;
+  font-size: 16px;
+  padding: -21px;
+  width: 35%;
+  font-family: Poppins;
+}
 
-.comfortaa-<uniquifier> {
-  font-family: "Comfortaa", sa;
+.container5{
+  color: #fff;
+  font-size: 16px;
+  padding: -21px;
+   font-family: Poppins;
+}
+
+span{
+  color: #e36729;
+}
+
+#main{
+  display: flex;
+  padding: 10px;
+}
+
+#base1{
+  text-align: left;
+  color: #fff;
+  font-size: 19px;
+    margin-left: 28px;
+}
+
+poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
 
-.your-style {
-    font-family: 'Stargaze Stencil';
-    font-weight: normal;
-    font-style: normal;
+i{
+   justify-content: space-between;
 }
 
-@font-face {
-    font-family: 'Stargaze';
-    src: url('Stargaze-Regular.woff2') format('woff2'),
-        url('Stargaze-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+.pre-loader {
+  position: fixed;
+  background: #000 url(https://i.ibb.co/rttDMSC/nn1111-ezgif-com-video-to-gif-converter.gif) no-repeat center center;
+  background-size: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+ 
+
+.main-container {
+  opacity: 0; /* Initially hide the main content */
+  transition: opacity 2s; /* Add a transition effect for fading in */
 }
 
-@font-face {
-    font-family: 'Stargaze Stencil';
-    src: url('Stargaze-Stencil.woff2') format('woff2'),
-        url('Stargaze-Stencil.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+
+.pre-loader.hidden {
+  animation: fadeOut 10s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
