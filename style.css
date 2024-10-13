@@ -273,7 +273,7 @@ i{
 
 
 .pre-loader.hidden {
-  animation: fadeOut 10s;
+  animation: fadeOut 7s;
   animation-fill-mode: forwards;
 }
 
