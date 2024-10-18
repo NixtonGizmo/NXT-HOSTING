@@ -1,16 +1,19 @@
 /* Global Styles */
 
 body {
-  font-family: times new roman, sans-serif;
-  background-color: #E0FFFF;
+  font-family: Poppins, sans-serif;
+ 
+  background-color: rgba(0,0,0,1.8);
+  background-size: 1400px;
+  background-blend-mode: multiply;
 }
 
 
 center {
-  width: 50%;
-  margin: 40px auto;
-  padding: 50px;
-  background-color: #fff;
+  width: 30%;
+  margin: 20px ;
+  padding: 40px;
+  background-color: ;
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -18,17 +21,20 @@ center {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0 auto; 
+  margin: 0 ; 
   left: 0;
+  background-color: #2B2B2C;
+  margin-top: -400px;
 }
 
 th, td {
   padding: 10px;
   border: 1px solid #ddd;
+  color: #fff;
 }
 
 th {
-  background-color: #f0f0f0;
+/*   background-color: #f0f0f0; */
   text-align: left;
 }
 
@@ -66,8 +72,8 @@ a:hover {
   color: #23527c;
 }
 marquee {
-  background-color: #40E0D0;
-  color: #fff;
+/*   background-color: #40E0D0; */
+  color: #780606;
   padding: 10px;
   border-radius: 10px;
 }
@@ -75,4 +81,58 @@ marquee {
 td button {
   margin: 0 auto;
   display: block;
+}
+
+
+poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+#img1{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, #87ceeb, #ffffff); /* sky background */
+	overflow: hidden;
+	background: url("https://lh3.googleusercontent.com/d/1_wfqi7bSM_iKIMx1sLNrS6aSx259sGrx=w2000");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+  
+}
+
+#img2{
+/*   display: flex; */
+  background-blend-mode: multiply;
+ <div id="skal"> 
+  <a href="https://ibb.co/m0LYGtF"><img src="https://i.ibb.co/3vD87WY/minecraft-skeleton-1600-x-900-wallpaper-ejj1bxvx8oiiz4y7-removebg-preview.png" alt="minecraft-skeleton-1600-x-900-wallpaper-ejj1bxvx8oiiz4y7-removebg-preview" border="0"></a>
+}
+
+#img3{
+  display: flex;
+ 
+  background-blend-mode: multiply;
+}
+
+
+#skal{
+   display: block;
+  margin-left: 150%;
+  margin-right: 30%;
+  width: 50%;
 }
