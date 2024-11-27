@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Hosting Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Checkout</h1>
+        </header>
+        <form class="checkout-form">
+          <section class="pay" style="display: flex; width: 900px; ">  <section class="main">  <section class="user-info">
+                <h2>User Information</h2>
+                <div class="input-group">
+                    <label for="name" >Name:</label>
+                    <input type="text" id="name" name="name"  required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </section>
+
+
+            <section class="server-selection">
+                <h2>Select Your Server</h2>
+                <select id="server" name="server" required onchange="updateServerDetails()">
+                    <option value="">--Select a Pack--</option>
+                    <option value="2GB">2 GB Pack</option>
+                    <option value="4GB">4 GB Pack</option>
+                    <option value="6GB">6 GB Pack</option>
+                    <option value="8GB">8 GB Pack</option>
+                    <option value="10GB">10 GB Pack</option>
+                    <option value="12GB">12 GB Pack</option>
+                    <option value="13GB">13 GB Pack</option>
+                    <option value="14GB">14 GB Pack</option>
+                    <option value="15GB">15 GB Pack</option>
+                </select><br><br>
+
+                <label for="ram">RAM:</label>
+                <input type="text" id="ram" name="ram" readonly><br><br>
+                
+                <label for="core">CORE:</label>
+                <input type="text" id="core" name="core" readonly><br><br>
+                
+                <label for="storage">STORAGE:</label>
+                <input type="text" id="storage" name="storage" readonly>
+            </section></section> </form>
+ <div class="pack-price-container" style="border: 0.1px solid #ccc; border-radius: 5px; height: 200px; align-items: center; width: 500px; background-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); background-color: #">
+               <div id="bill"> <label for="pack"  style="margin-right: 37px; ">Pack_Price:</label>
+                 <input type="text" id="pack" name="pack" class="pack-price" readonly style="border: 0px solid #ccc; font-size: 15px;  background-color: #000;  color: #fff;"></div>
+      
+  <div id="bill">  <label for="tax" style="margin-right: 107px;">Tax:</label>
+    <input type="text" id="tax" name="pack" class="tax" readonly style="border: 0px solid #ccc; font-size: 15px;  background-color: #000;  color: #fff;"></div>
+          
+    <div id="bill"><label for="Extra" style="margin-right: 50px;  background-color: #000;">Extra_Ram:</label>
+                <input type="text" id="Extra" name="Extra" class="Extra" readonly style="border: 0px solid #ccc; font-size: 15px;  background-color: #000;  color: #fff;"></div>
+           
+   <div id="bill"> <label for="Total" style="margin-right: 50px;">Total_Price:</label>
+                <input type="text" id="Total" name="Total" class="Total" readonly style="border: 0px solid #ccc; font-size: 15px;  background-color: #000;  color: #fff;"></div>
+       <button type="submit">Complete Purchase</button>        </div> 
+          </section> 
+       
+    </div><footer>
+         <h4 id="on1"> OWNED BY NIXTON</h4>
+ </div>   
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-discord"></i>
+    <i class="fa-brands fa-xbox"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-tiktok"></i>
+<p>&copy; 2023 Server Hosting Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
