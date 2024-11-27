@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6; 
+
+}
+.container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #;
+        }
+
+header {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+h1 {
+    color: #e36729;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e36729;
+    color: #000;
+    border: px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #780606;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.user-info,
+.server-selection,
+.payment-info {
+    background: #;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.server-selection select {
+    cursor: pointer;
+ 
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+ 
+ #bill {
+    display: flex;
+  }
+
+.Total {
+  
+}
+
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+/*         .input-group label { */
+            margin-right: 10px;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        .input-group input {
+            flex: 1;
+        }
+
+        .pack-price-container {
+            
+            align-items: center;
+             margin-top: 30px;                           margin-left: 70px; 
+        }
+
+        .pack-price {
+            margin-left: 10px; /* Space between name and pack price */
+            width: 200px; /* Adjust width as needed */
+        }
+
+        .server-selection {
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    
+footer {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+i{
+   justify-content: space-between;
+}
