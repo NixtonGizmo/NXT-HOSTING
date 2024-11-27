@@ -302,6 +302,15 @@ main h5 {
 .first {
  width: 10px;
   height: 10px;
+}   
+footer {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+i{
+   justify-content: space-between;
 }
 
 .second {
