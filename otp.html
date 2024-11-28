@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="otp.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-   
     <title>OTP</title>
 </head>
 <body>
-  <div class="container"> <div class="input-field">
-        <i class="fas fa-lock"></i>
-        <input id="pass-field" type="password" placeholder="Enter OTP" required>
-</div>
-<div class="button-field">
-    <a href="otp.html"><button>Submit</button></a>
-</div>
-</div>
+  <div class="container">
+      <form onsubmit="return handleSubmit();">
+          <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input id="pass-field" type="password" placeholder="Enter OTP" required>
+          </div>
+          <div class="button-field">
+              <button type="submit">Submit</button>
+          </div>
+      </form>
+  </div>
+
+  <script>
+      function handleSubmit() {
+          const otp = document.getElementById('pass-field').value.trim();
+
+          if (otp === '') {
+              alert('Please enter the OTP.');
+              return false; // Prevent form submission
+          }
+
+          // If OTP is entered, you can proceed to the next step (e.g., redirect or validate)
+          window.location.href = 'log.html'; // Example redirect
+          return false; // Prevent form submission
+      }
+  </script>
 </body>
 </html>
