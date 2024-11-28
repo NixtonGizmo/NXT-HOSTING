@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-   <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="reg.css">
     <title>Sign Up</title>
 </head>
 <body>
@@ -13,42 +13,42 @@
         <div class="input-field" style="color: #999; border-bottom: 0px; text-align: center; align-items: center; justify-content: center;">
             <h1>SIGN UP</h1>
         </div>
-     <form>
-        <div class="input-field">
-            <i class="fas fa-user"></i>
-            <input id="user-field" type="text" placeholder="Username" required>
+        <form onsubmit="return navigateToOtp();">
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input id="user-field" type="text" placeholder="Username" required>
+            </div>
+            <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input id="Email-field" type="email" placeholder="Email" required>
+            </div>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input id="pass-field" type="password" placeholder="Password" required>
+            </div>
+            <div class="button-field">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <div class="input-field" style="color: #999; border-bottom: 0px; text-align: center; align-items: center; justify-content: center;">
+            <p>Already have an account? <a href="login.html">Login</a></p>
         </div>
-        <div class="input-field">
-            <i class="fas fa-envelope"></i>
-            <input id="Email-field"  type="email" placeholder=" Email" required>
-        </div>
-        <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input id="pass-field" type="password" placeholder="Password" required>
-</div>
- <div class="button-field">
-    <button type="submit">Login</button>
-</div>
-</form>
-<div class="input-field" style="color: #999; border-bottom: 0px; text-align: center; align-items: center; justify-content: center;">
-<p>Already have a account? <a href="log.html">Login</a></p>
-</div>
-</div>
+    </div>
 </div>   
-</form>
+
 <script>
 function navigateToOtp() {
-const username = document.getElementById('user-field').value.trim();
-const password = document.getElementById('pass-field').value.trim();
+    const username = document.getElementById('user-field').value.trim();
+    const password = document.getElementById('pass-field').value.trim();
 
-if (username === '' || password === '') {
-alert('Please fill in both fields.');
-return false; // Prevent form submission
-}
+    if (username === '' || password === '') {
+        alert('Please fill in both fields.');
+        return false; // Prevent form submission
+    }
 
-// If both fields are filled, navigate to OTP page
-window.location.href = 'otp.html';
-return false; // Prevent form submission
+    // If both fields are filled, navigate to OTP page
+    window.location.href = 'otp.html';
+    return false; // Prevent form submission
 }
 </script>
 </body>
