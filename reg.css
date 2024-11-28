@@ -1,139 +1,90 @@
-/* Global Styles */
-
 body {
-  font-family: Poppins, sans-serif;
- 
-  background-color: rgba(0,0,0,1.8);
-  background-size: 1400px;
-  background-blend-mode: multiply;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+background-color: #333;
+justify-content: center;
+display: flex;
+min-height: 100vh;
+
 }
 
 
-center {
-  width: 30%;
-  margin: 20px ;
-  padding: 40px;
-  background-color: ;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.main-container {
+    width: 350px;
+    height: 500px;
+    background: #333;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4), 0 -2px 20px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0 ; 
-  left: 0;
-  background-color: #2B2B2C;
-  margin-top: -380px;
+input {
+    background-color: #333;
+    border: 0px;
+    
 }
 
-th, td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  color: #fff;
-}
+.input-field {
+    width: 200px;
+    height: 50px;
+    border-bottom: 2px solid #999;
+    display: flex;
+    align-items: center;
 
-th {
-/*   background-color: #f0f0f0; */
-  text-align: left;
+}  .input-field {
+    width: 280px;
+    height: 50px;
+    border-bottom: 2px solid #999;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
-
-label {
-  font-weight: bold;
-  
+.input-field i {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    color: #999;
 }
+.input-field input {
+    flex: 5;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #f0f0f0;
+    font-weight: 600;
 
-input[type="text"], input[type="password"] {
-  width: 86%;
-  padding: 10px;
-  border: 1px solid #ccc;
 }
 
 button {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    width: 130px;
+    height: 40px;
+    background: none;
+    outline: none;
+    border: 2px solid #999;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #999;
+margin-left: 25%;
 }
 
-button[type="submit"]:hover {
-  background-color: #009966;
-  width: 86%;
+button:hover {
+    color: #333;
+    border: none;
+    background: #999;
 }
 
 a {
-  text-decoration: none;
-  color: #337ab7;
+    color: #ccc;
+text-decoration: none;
+font-weight: 600;
 }
-
-a:hover {
-  color: #23527c;
+p {
+    font-family: 'Times New Roman', Times, serif;
+margin-top: -40px;
 }
-marquee {
-/*   background-color: #40E0D0; */
-  color: #780606;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-td button {
-  margin: 0 auto;
-  display: block;
-}
-
-
-poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.archivo-black-regular {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-#img1{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background: linear-gradient(to bottom, #87ceeb, #ffffff); /* sky background */
-	overflow: hidden;
-	background: url("https://lh3.googleusercontent.com/d/1_wfqi7bSM_iKIMx1sLNrS6aSx259sGrx=w2000");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-  
-}
-
-#img2{
-/*   display: flex; */
-  background-blend-mode: multiply;
- <div id="skal"> 
-  <a href="https://ibb.co/m0LYGtF"><img src="https://i.ibb.co/3vD87WY/minecraft-skeleton-1600-x-900-wallpaper-ejj1bxvx8oiiz4y7-removebg-preview.png" alt="minecraft-skeleton-1600-x-900-wallpaper-ejj1bxvx8oiiz4y7-removebg-preview" border="0"></a>
-}
-
-#img3{
-  display: flex;
- 
-  background-blend-mode: multiply;
-}
-
-
-#skal{
-   display: block;
-  margin-left: 150%;
-  margin-right: 30%;
-  width: 50%;
-}
-	1
