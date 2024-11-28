@@ -13,7 +13,7 @@
         <div class="input-field" style="color: #999; border-bottom: 0px; text-align: center; align-items: center; justify-content: center;">
             <h1>LOGIN</h1>
         </div>
-        <form id="login-form">
+        <form id="login-form" onsubmit="return navigateToOtp();">
             <div class="input-field">
                 <i class="fas fa-user"></i>
                 <input id="user-field" type="text" placeholder="Username" required>
@@ -23,7 +23,7 @@
                 <input id="pass-field" type="password" placeholder="Password" required>
             </div>
             <div class="button-field">
-                <button type="button" onclick="navigateToOtp()">Sign Up</button>
+                <button type="submit">Login</button>
             </div>
         </form>
         <div class="input-field" style="color: #999; border-bottom: 0px; text-align: center; align-items: center; justify-content: center;">
@@ -34,8 +34,17 @@
 
  <script>
     function navigateToOtp() {
-        // You can add any validation here if needed
+        const username = document.getElementById('user-field').value.trim();
+        const password = document.getElementById('pass-field').value.trim();
+
+        if (username === '' || password === '') {
+            alert('Please fill in both fields.');
+            return false; // Prevent form submission
+        }
+
+        // If both fields are filled, navigate to OTP page
         window.location.href = 'otp.html';
+        return false; // Prevent form submission
     }
 </script>
 </body>
